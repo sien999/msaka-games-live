@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSAKA GAMES AND MOVIES</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<header class="navbar">
+  <div class="logo">🎮 MSAKA GAMES AND MOVIES</div>
+  
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger icon -->
+
+  <nav id="nav-menu">
+    <ul class="nav-links">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<body>
+  <header>
+    <h1>HOUSE OF GAMING</h1>
+    <p class="tagline">Your one-stop hub for games, consoles & movie news</p>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to MSAKA</h2>
+    <p>We install games, repair consoles, and keep you updated with the latest in gaming & movies.</p>
+      <div class="hero-content">
+  
+  <p class="fade-in delay-1">Your ultimate game & movie store</p><br>
+  <a href="#product-gallery" class="hero-btn fade-in delay-2">Get Started</a>
+</div>
+     </section>
+
+
+  <section id="main-grid" class="grid-section">
+    <div  class="grid-item">
+      <h2>🎮 Game Services</h2>
+      <p>Installation for PC, PS2, PS3, PS4, PS5. Console repairs and updates.</p>
+    </div>
+    <div class="grid-item">
+      <h2>📰 Latest News</h2>
+      <p>Hot updates and trends in gaming and movie entertainment, all in one place.</p>
+    </div>
+    <div class="grid-item">
+      <h2>🛒 Featured Products</h2>
+      <p>Consoles, gamepads, accessories – available for sale and order now.</p>
+    </div>
+  </section>
+  <section id="product-gallery" class="product-gallery">
+  <h2>🛍️ Featured Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <a href="products/ps5.html" class="product-link">
+      <div class="image-wrapper">
+    
+      <img src="images/ps5.jpg" alt="PS5 Console">
+       </div>
+      <h3>PlayStation 5</h3>
+      <p>Price: TZS 1,800,000</p> </a>
+    </div>
+    <div class="product-card">
+      <a href="products/xbox-pad.html" class="product-link">
+      <div class="image-wrapper">
+      <img src="images/xbox-pad.jpg" alt="Xbox Pad">
+      </div>
+       <h3>Xbox Gamepad</h3>
+      <p>Price: TZS 120,000</p></a>
+    </div>
+    <div class="product-card">
+      <a href="products/gaming-laptop.html" class="product-link">
+      <div class="image-wrapper">
+      <img src="images/gaming-laptop.jpg" alt="Gaming Laptop">
+    </div>
+      <h3>Gaming Laptop</h3>
+      <p>Price: TZS 2,300,000</p></a>
+    </div>
+  </div>
+</section>
+ 
+
+<div id="news" class="news-section">
+  <h2 class="fade-in">📰 Latest News</h2>
+  <div class="news-grid">
+    <div class="news-card fade-in delay-1">
+      <img src="images/news1.jpg" alt="GTA 6 Announced">
+      <h3>GTA 6 Officially Announced</h3>
+      <p class="news-date">June 18, 2025</p>
+      <p>Rockstar Games teases the first trailer of GTA 6 with new map features and graphics...</p>
+    </div>
+    <div class="news-card fade-in delay-2">
+      <img src="images/news2.jpg" alt="Spider-Man 2 Release">
+      <h3>Spider-Man 2 Hits PS5</h3>
+      <p class="news-date">June 15, 2025</p>
+      <p>Marvel’s Spider-Man 2 breaks launch records with next-gen performance and epic storyline...</p>
+    </div>
+    <div class="news-card fade-in delay-3">
+      <img src="images/news3.jpg" alt="Movie Update">
+      <h3>Deadpool 3 New Trailer</h3>
+      <p class="news-date">June 12, 2025</p>
+      <p>Ryan Reynolds returns with hilarious action and unexpected Marvel cameos. Watch the trailer...</p>
+    </div>
+  </div>
+</div>
+
+
+
+  <footer>
+    <p>&copy; 2025 MSAKA GAMES AND MOVIES. All rights reserved.</p>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('nav-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

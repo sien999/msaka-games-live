@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Featured Products - MSAKA GAMES AND MOVIES</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+  <!-- Include your navbar here (copy from index.html) -->
+  <header class="navbar">
+    <div class="logo">🎮 MSAKA GAMES</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products-section">
+      <h1>Featured Products</h1>
+      <div class="product-grid">
+        <!-- Example product cards, copy from your homepage -->
+        <div class="product-card">
+          <img src="images/gamepad.jpg" alt="Gamepad" />
+          <h3>Wireless Gamepad</h3>
+          <p>High quality wireless gamepad compatible with PS4 and PC.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/ps5-console.jpg" alt="PS5 Console" />
+          <h3>PS5 Console</h3>
+          <p>Latest Sony PlayStation 5 console with Ultra HD graphics.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <!-- Add more products here -->
+      </div>
+    </section>
+    <section class="order-form-section">
+ <h2>Order Inquiry</h2>
+  <form id="orderForm">
+    <label for="name">Full Name</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email Address</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="serviceProduct">Product or Service</label><br />
+    <input type="text" id="serviceProduct" name="serviceProduct" required /><br /><br />
+
+    <label for="message">Additional Details</label><br />
+    <textarea id="message" name="message" rows="4"></textarea><br /><br />
+
+    <button type="submit" class="btn">Send Inquiry</button>
+  </form>
+</section>
+  </main>
+
+  <!-- Optional footer here -->
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

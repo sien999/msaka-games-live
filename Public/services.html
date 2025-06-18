@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Services - MSAKA GAMES AND MOVIES</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+  <!-- Include navbar same as above -->
+  <header class="navbar">
+    <div class="logo">🎮 MSAKA GAMES</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-section">
+      <h1>Game Services</h1>
+      <ul class="services-list">
+        <li>Installation of games on PC, PS2, PS3, PS4, PS5</li>
+        <li>Console repairs and maintenance</li>
+        <li>Selling consoles and game pads</li>
+        <li>Custom game modding</li>
+        <!-- Add more services here -->
+      </ul>
+    </section>
+    <section class="order-form-section">
+ <h2>Order Inquiry</h2>
+  <form id="orderForm">
+    <label for="name">Full Name</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email Address</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="serviceProduct">Product or Service</label><br />
+    <input type="text" id="serviceProduct" name="serviceProduct" required /><br /><br />
+
+    <label for="message">Additional Details</label><br />
+    <textarea id="message" name="message" rows="4"></textarea><br /><br />
+
+    <button type="submit" class="btn">Send Inquiry</button>
+  </form>
+</section>
+  </main>
+
+  <!-- Optional footer -->
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
