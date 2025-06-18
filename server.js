@@ -8,11 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Serve static files from "public" folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'msaka-server', 'public')));
 
-// Home page route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'msaka-server', 'public', 'index.html'));
 });
 
 // Contact form submission route
